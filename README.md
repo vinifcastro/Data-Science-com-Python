@@ -13,14 +13,20 @@ Esta pasta corresponde à formação de **Linguagem Python**, abordando os funda
 ---
 
 ## 📁 2 - Python Data Science  
-Esta pasta refere-se à formação **Data Science com Python**, com foco em análise de dados, Pandas, visualização e fundamentos de Machine Learning.
+Esta pasta é dedicada aos estudos realizados durante a formação **Data Science com Python**, da Alura. Ao longo desta etapa, o foco está em desenvolver habilidades essenciais para quem deseja atuar com análise de dados, utilizando Python e suas principais bibliotecas.
+
+📌 **O que você encontrará nesta pasta:**
+- Scripts e notebooks de **análise exploratória de dados (EDA)**;
+- Projetos com **Pandas** para manipulação e limpeza de dados;
+- Uso de **NumPy** para cálculos vetoriais e matrizes;
+- Visualizações de dados com **Matplotlib** e **Seaborn**;
 
 🔗 Acesse a formação: [Formação Data Science com Python - Alura](https://cursos.alura.com.br/formacao-data-science-python?preRequirementFrom=avancando-data-science-python)
 
 ---
 
 ## 📁 3 - Avançando em Python Data Science  
-Esta última pasta é dedicada à formação **Avançando em Data Science com Python**, que aprofunda conceitos de Machine Learning, análise preditiva, pipelines e muito mais.
+Esta última pasta é dedicada à formação **Avançando em Data Science com Python**, que aprofunda nas principais bibliotecas de visualização de dados, como utilizá-las para extrair informações relevantes e criar tabelas personalizadas. Além disso, você terá a chance de integrar o Python com outras ferramentas e tecnologias, como SQL, PowerBI, Geopandas e Folium.
 
 🔗 Acesse a formação: [Formação Avançando em Data Science com Python - Alura](https://cursos.alura.com.br/formacao-avancando-data-science-python)
 
