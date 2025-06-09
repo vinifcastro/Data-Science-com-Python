@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nome": "Kaka's Burguer",
+        "categoria": "Sanduicheria",
+        "ativo": false
+    },
+    {
+        "id": 2,
+        "nome": "Coco Bambu",
+        "categoria": "Frutos do Mar",
+        "ativo": false
+    }
+]
