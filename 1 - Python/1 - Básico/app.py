@@ -1,5 +1,6 @@
 import os
 import json
+from tabulate import tabulate
 
 def nome_programa():
     print('''
@@ -58,19 +59,27 @@ def cadastrar_restaurante(restaurantes):
     print(f'O restaurante "{restaurante_atual["nome"]}" foi cadastrado com sucesso!')
     input('\nAperte ENTER para continuar...')
 
+from tabulate import tabulate
+
 def listar_restaurantes(restaurantes):
     titulo('Ｌｉｓｔａ ｄｅ Ｒｅｓｔａｕｒａｎｔｅｓ\n', False, True)
 
-    if len(restaurantes) == 0:
+    if not restaurantes:
         print('Não há restaurantes cadastrados!')
         return False
-    else:
-        for restaurante in restaurantes:
-            id_atual = str(restaurante['id'])
-            nome_atual = restaurante['nome']
-            categoria_atual = restaurante['categoria']
-            ativo = 'Restaurante Ativo' if restaurante['ativo'] else 'Restaurante Inativo'
-            print(f'{id_atual.center(6)} | {nome_atual.center(22)} | {categoria_atual.center(22)} | {ativo.center(22)} |')
+
+    tabela = []
+    for restaurante in restaurantes:
+        status = "Restaurante Ativo" if restaurante['ativo'] else "Restaurante Inativo"
+        tabela.append([
+            restaurante['id'],
+            restaurante['nome'],
+            restaurante['categoria'],
+            status
+        ])
+
+    cabecalhos = ["ID", "NOME RESTAURANTE", "CATEGORIA", "STATUS"]
+    print(tabulate(tabela, headers=cabecalhos, tablefmt="fancy_grid"))
     return True
 
 def titulo(texto, limpar_tela_antes, limpar_tela_depois):

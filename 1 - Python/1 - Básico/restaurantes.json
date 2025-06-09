@@ -10,5 +10,11 @@
         "nome": "Coco Bambu",
         "categoria": "Frutos do Mar",
         "ativo": false
+    },
+    {
+        "id": 3,
+        "nome": "Carlinhos Bar",
+        "categoria": "Bar e Restaurante",
+        "ativo": true
     }
 ]
